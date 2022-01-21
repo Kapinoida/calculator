@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javaScriptCalculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  
+<div class="container">
+
+  <h1><span id="green">javaScriptCalculator</span></h1>
+
+  <div class="calculator">
+    
+    <div class="screen calc-row">
+      <div id="calculation"></div>
+    </div>
+
+    <div class="screen row">
+      <div id="clear" class="button clear" onclick="clearButton()">C</div>
+      <div id="display" class="value-area"></div>
+    </div>
+
+    <div class="row">
+      <div id="seven" class="button number" onclick="showPresentNumber(7)">7</div>
+      <div id="eight" class="button number" onclick="showPresentNumber(8)">8</div>
+      <div id="nine" class="button number" onclick="showPresentNumber(9)">9</div>
+      <div id="divide" class="button operator" onclick="selectOperator('/')">&divide;</div>
+    </div>
+
+    <div class="row">
+      <div id="four" class="button number" onclick="showPresentNumber(4)">4</div>
+      <div id="five" class="button number" onclick="showPresentNumber(5)">5</div>
+      <div id="six" class="button number" onclick="showPresentNumber(6)">6</div>
+      <div id="multiply" class="button operator" onclick="selectOperator('*')">&#215;</div>
+    </div>
+
+    <div class="row">
+      <div id="one" class="button number" onclick="showPresentNumber(1)">1</div>
+      <div id="two" class="button number" onclick="showPresentNumber(2)">2</div>
+      <div id="three" class="button number" onclick="showPresentNumber(3)">3</div>
+      <div id="subtract" class="button operator" onclick="selectOperator('-')">-</div>
+    </div>
+
+    <div class="row">
+      <div id="zero" class="button number" onclick="showPresentNumber(0)">0</div>
+      <div id="decimal" class="button number" onclick="decimalButton()">.</div>
+      <div id="equals" class="button equal" onclick="equalButton()">&#61;</div>
+      <div id="add" class="button operator" onclick="selectOperator('+')">&plus;</div>
+    </div>
+  </div>
+  
+  <!-- <div class="footer">
+    
+    <a href="https://dcplaskett.com" target="_blank">dcplaskett</a>
+    
+  </div> -->
+</div>
+</body>
+</html>

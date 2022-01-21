@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+
+body {
+  background-color: #34495E;
+  font-family: Oxygen Mono, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+main {
+  display: block;
+  margin: auto;
+  width: 640px;
+  font-size: 48px;
+  color: #BDC3C7;
+  background-color: #22313F;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, .2);
+}
+
+.calc-row {
+  height: 80px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  height: 160px;
+}
+
+.screen {
+  background-color: #22313F;
+}
+
+#display {
+  color: #ccc;
+  font-size: 34px;
+  padding-top: 48px;
+  width: 480px;
+  text-align: right;
+  padding-right: 15px;
+  margin-left: -15px;
+}
+
+button{
+  font-family: Oxygen Mono, monospace;
+  width: 160px;
+  text-align: center;
+  margin: none;
+  cursor: pointer;
+  user-select: none;
+  font-size: 48px;
+  background-color: #67809F;
+  color: #BDC3C7;
+  border: none;
+}
+
+button:hover {
+  background-color: #22313F;
+}
+
+#clear:hover {
+  background-color: #96281B;
+}
+
+.operator:hover {
+  background-color: #5C97BF;
+}
+
+#equals:hover {
+  background-color: #1E824C;
+}
